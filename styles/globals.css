@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
 html,
 body {
   padding: 0;
@@ -9,8 +21,100 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
+html {
+  overflow-y: scroll;
 }
+
+table, pre, code, select, input, textarea, kbd, var, ins, del, samp, h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+br {
+  vertical-align: middle;
+}
+
+address,cite,dfn,em,var {
+  font-style: normal;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+  line-height: 1;
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+ul,ol,li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+abbr,acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+form label {
+  cursor: pointer;
+}
+
+select option {
+  padding: 0 5px;
+}
+
+input, textarea {
+  margin: 1px;
+  padding: 2px;
+  line-height: 1;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input,
+textarea,
+button,
+select,
+option {
+outline: none;
+}
+
+input {
+vertical-align: middle;
+}
+
+button {
+border: none;
+outline: none;
+background: none;
+}
+
+
+
+
+
+
+
+
+
