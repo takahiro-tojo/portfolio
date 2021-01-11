@@ -16,7 +16,9 @@ export default function Home({ works }) {
         <div className={styles.works_body}>
           <p className={styles.works_desc}>現状のHPはサポート部署の対応により一部制作時から変更されている可能性がございます。</p>
           <p className={styles.works_desc}>画像をクリックするとプロジェクトの詳細ページに飛びます。</p>
+          <p className={styles.works_desc}>※勉強のため本サイトはNext.jsを使用し構築いたしました。</p>
         </div>
+
       </div>
       <div className={styles.works_container}>
         <h1 className={styles.works_ttl}>WORKS</h1>
@@ -56,6 +58,20 @@ export const getStaticProps = async () => {
   return {
     props: {
       works: data.contents,
+    },
+  };
+};
+
+export const getStaticProps2 = async () => {
+  const key = {
+    headers: {'X-API-KEY': process.env.API_KEY},
+  };
+  const data2 = await fetch('https://portfolio1003.microcms.io/api/v1/about', key)
+    .then(res => res.json())
+    .catch(() => null);
+  return {
+    props: {
+      about: data2.contents,
     },
   };
 };
